@@ -1,0 +1,70 @@
+
+$color: azul;
+$lista1: red,black,purple;
+
+body{
+    background-color: aqua;
+}
+header{
+    background-color: pink;
+    border: solid 4px crimson;
+    color:black;
+    text-align: center;
+}
+.contenedor1{
+    @if ($color == rojo) { 
+        border: solid 20px black;
+    } 
+    @else {
+        border: solid 20px purple;
+    }
+    color:black;
+    text-align: center;
+}
+    /* con through tomaria el 3 tambien*/
+    @for $i from 1 to 3{
+        .bucle#{$i}{
+            font-size: 45px
+        }
+    }
+            /*Prueba Each*/
+    @each $jugadores in messi, neymar{
+        .#{$jugadores}Bgcolor{
+            font-size: 60px;
+        }
+    }
+
+            /*Prueba maps*/
+
+
+footer{
+    background-color: pink;
+    border: solid 4px crimson;
+    color: black;
+    text-align: center;
+}
+
+$copas: (
+    Champions:blue,
+    Liga:red,
+    Copa:purple,
+);
+
+@each $clave, $valor in $copas {
+    .btn--#{$clave} {
+        background-color: $valor;
+    }
+}
+$copas: (
+    Champions:white,
+    Liga:white,
+    Copa:white,
+);
+
+@each $clave, $valor in $copas {
+    .btn--#{$clave} {
+        color: $valor;
+    }
+}
+        
+    

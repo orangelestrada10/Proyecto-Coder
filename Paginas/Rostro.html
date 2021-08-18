@@ -8,18 +8,11 @@
     <meta name="description" content="Naturalucosmetics la marca de cosmeticos que logra llevar a cabo un producto apto para su uso en cosmética natural, libre de sulfatos, parabenos y crueldad animal">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="../Estilos/Estilos.css">
-    <title>Productos</title>                                          
+    <title>Productos</title>
 </head>
 <body>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send/?phone=5455171056&text&app_absent=0" class="float" target="_blank">
-    <i class="fa fa-whatsapp my-float"></i>
-    </a>  
     <header class="header">
-        <img class="header__logo" src="../Logos/logorosado.jpg" alt="logo" width="300px"> 
+        <img src="../Logos/logorosado.jpg" alt="logo" width="300px"> 
         </header>
         <nav class="navbar">
             <ul class="nav nav-tabs">
@@ -29,8 +22,8 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="./Productos.html">Productos grid</a>
-                    <a class="dropdown-item" href="./Productosboostrap.html">Produsctos Bootstrap</a>
+                    <a class="dropdown-item" href="./Cuerpo.html">Corporal</a>
+                    <a class="dropdown-item" href="./Rostro.html">Rostro</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./Contacto.html">Contacto</a>
@@ -40,24 +33,39 @@
                 </li>
               </ul>
         </nav>
-    <div class="grid">
-        <div class="itemDiv1">Productos!</div>
-        <div class="itemDiv2">
-            <div class="fotosDiv">
-                <img class="fotosDiv__img" src="../Fotos/Cuerpo/6c00634def39573b4aa91480bbd739df7dc663e81d507e69a87a10e6ca475e0e5358.jpeg" alt="Fotoscuerpo" width="210px" height="210px">
-                <img class="fotosDiv__img" src="../Fotos/Cuerpo/58ed0ec1f373ee0cb106198bd10bafb94307b3774a1222e123d26ea4797583035358.jpeg" alt="Fotoscuerpo"  width="210px" height="210px" >
-                <img class="fotosDiv__img" src="../Fotos/Cuerpo/9ccca14fe737dd79e514edc6f3651f74cd39af11de945feccdf8f1678c40840b5358.jpeg" alt="Fotoscuerpo"  width="210px" height="210px" >
+        <h1 class="textoCarrusel">Productos!</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./Fotos/rostro1.jpg" class="d-block w-100" alt="foto" height="600px">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Fotos/rostro2.jpg" class="d-block w-100" alt="foto"  height="600px">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Fotos/rostro3.jpg" class="d-block w-100" alt="foto"  height="600px"> 
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Fotos/rostro4.jpg" class="d-block w-100" alt="foto"  height="600px"> 
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Fotos/rostro5.jpg" class="d-block w-100" alt="foto"  height="600px"> 
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                    </div>  
             </div>
-        </div>
-        <div class="itemDiv3">Cuerpo</div>
-        <div class="itemDiv4">Rostro</div>
-        <div class="itemDiv5">
-            <div class="fotosDiv2">
-                <img class="fotosdiv2__img" src="../Fotos/Rostro/Crema.jpg" alt="Fotoscuerpo" width="210px" height="210px">
-                <img class="fotosdiv2__img" src="../Fotos//Rostro/Mascarilla arcilla.jpg" alt="Fotoscuerpo"  width="210px" height="210px" >
-                <img class="fotosdiv2__img" src="../Fotos/Rostro/rostro.jpg" alt="Fotoscuerpo"  width="210px" height="210px" >
-            </div>
-        </div>
+        </div>        
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
